@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* хром, сафари */
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fadeQuestions-enter-active,
+.fadeQuestions-leave-active {
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.fadeQuestions-enter-from,
+.fadeQuestions-leave-to {
+  opacity: 0;
+}
+
+.slideQuiz-enter-active {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.slideQuiz-leave-active {
+  -webkit-transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slideQuiz-enter, .slideQuiz-leave-to {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  opacity: 0;
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+body {
+  font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #2c3e50;
+  background: #2c3e50;
+}
+
+hr {
+  margin: 10px 0;
+  padding: 0;
+  height: 5px;
+  border: none;
+  background: linear-gradient(45deg, #2c3e50, #42b983);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 5px;
+  background: #fff;
+  -webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+  /* border: 2px solid white; */
+}
+
+.card {
+  padding: 1rem 1.0rem 1rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  width: 75vmax;
+  height: 800px;
+  overflow-y: scroll;
+  /* прокрутка по вертикали */
+}
+
+.cardFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardFlex .checkBox {
+  height: 18px;
+}
+
+.form-control input,
+.form-control select {
+  outline: none;
+  border: 2px solid #ccc;
+  width: 100%;
+  color: #2c3e50;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.form-control input:active,
+.form-control input:focus,
+.form-control select:active,
+.form-control select:focus {
+  -webkit-transition: border 0.22s;
+  transition: border 0.22s;
+  border: 2px solid #42b983;
+}
+
+.form-control.invalid input {
+  border-color: #e53935;
+}
+/*# sourceMappingURL=theme.css.map */

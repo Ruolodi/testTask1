@@ -1,0 +1,83 @@
+@import "nullStyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+body{
+    font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: #2c3e50;
+    background: #2c3e50;
+}
+hr {
+    margin: 10px 0;
+	padding: 0;
+	height: 5px;
+	border: none;
+	background: linear-gradient(45deg, #2c3e50, #42b983);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align:center;
+    font-weight: 500;
+    line-height: 1.45;
+    margin: 0 0 10px 0;
+}
+p{
+    font-size: 14px;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid white; */
+}
+.card{
+    padding: 1rem 1.0rem 1rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+   
+    background: #fff;
+    width: 75vmax;
+    height: 800px;
+    overflow-y: scroll; /* прокрутка по вертикали */
+}
+.cardFlex{
+    display: flex;
+    .checkBox{
+        height: 18px;
+    }
+}
+
+.form-control input,
+.form-control select{
+    outline: none;
+    border: 2px solid #ccc;
+    width: 100%;
+    color: #2c3e50;
+    padding: 0.5rem ;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.form-control input:active,
+.form-control input:focus,
+.form-control select:active,
+.form-control select:focus {
+    transition: border 0.22s;
+    border: 2px solid #42b983;
+}
+.form-control.invalid input {
+    border-color: #e53935;
+}
