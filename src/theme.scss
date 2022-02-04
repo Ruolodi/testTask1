@@ -31,6 +31,26 @@ p{
     font-size: 14px;
 }
 
+.btn {
+    color: #ffffff;
+    position: relative;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    border-radius: 99px;
+    letter-spacing: 0.05em;
+    border: 1px solid #42b983;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding: 0.5rem 1.5rem;
+    white-space: nowrap;
+    font-weight: 700;
+    outline: none;
+    background: linear-gradient(45deg, #2c3e50, #42b983);
+    transition: all 0.22s;
+}
+
 .container{
     position: absolute;
     left: 50%;
@@ -49,8 +69,8 @@ p{
     border-radius: 10px;
    
     background: #fff;
-    width: 75vmax;
-    height: 800px;
+    width: 40vmax;
+    height: 500px;
     overflow-y: scroll; /* прокрутка по вертикали */
 }
 .cardFlex{
@@ -77,7 +97,4 @@ p{
 .form-control select:focus {
     transition: border 0.22s;
     border: 2px solid #42b983;
-}
-.form-control.invalid input {
-    border-color: #e53935;
 }
