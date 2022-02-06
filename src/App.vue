@@ -139,7 +139,7 @@ export default {
       number: "",
       city: "",
       selected: "",
-      document: "",
+      document: "passport",
       passportSeries: "",
       passportNumber: "",
       passportIssued: "",
