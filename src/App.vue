@@ -48,6 +48,7 @@
           <option disabled="disabled" value="">Выберите пол</option>
           <option v-for="items in gender" :key="items">{{ items }}</option>
         </select>
+        <small v-if="v$.selectGroup.$error">Выберите группу</small>
         <select
           v-model="selectGroup"
           :style="v$.selectGroup.$error ? styleObject : ''"
@@ -72,6 +73,7 @@
         <input type="text" v-model="index" placeholder="Индекс" />
         <input type="text" v-model="country" placeholder="Страна" />
         <input type="text" v-model="region" placeholder="Область" />
+        <small v-if="v$.city.$error">Укажите ваш город</small>
         <input
           type="text"
           :style="v$.city.$error ? styleObject : ''"
