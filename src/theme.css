@@ -162,6 +162,10 @@ p {
   font-size: 14px;
 }
 
+small {
+  color: red;
+}
+
 .btn {
   color: #ffffff;
   position: relative;
@@ -201,7 +205,7 @@ p {
 }
 
 .card {
-  padding: 1rem 1.0rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin-bottom: 1rem;
   border-radius: 10px;
   background: #fff;
@@ -219,6 +223,18 @@ p {
 
 .cardFlex .checkBox {
   height: 18px;
+}
+
+.errorValidate {
+  color: red;
+  text-align: center;
+  padding: 15px 10px 10px 10px;
+}
+
+.validate {
+  color: #42b983;
+  text-align: center;
+  padding: 15px 10px 10px 10px;
 }
 
 .form-control input,
@@ -240,11 +256,5 @@ p {
   -webkit-transition: border 0.22s;
   transition: border 0.22s;
   border: 2px solid #42b983;
-}
-
-.form-control.invalid input {
-  -webkit-transition: border 0.22s;
-  transition: border 0.22s;
-  border-color: #e53935;
 }
 /*# sourceMappingURL=theme.css.map */
